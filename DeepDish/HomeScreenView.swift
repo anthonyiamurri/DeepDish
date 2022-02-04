@@ -17,17 +17,17 @@ struct RoundedCorner: Shape {
         return Path(path.cgPath)
     }
 }
-extension View{
+extension View {
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
         clipShape(RoundedCorner(radius: radius, corners: corners) )
     }
 }
 
 struct HomeScreenView: View {
-     var topLeft: CGFloat = 0
-     var topRight: CGFloat = 50
-     var bottomLeft: CGFloat = 50
-     var bottomRight: CGFloat = 0
+    var topLeft: CGFloat = 0
+    var topRight: CGFloat = 50
+    var bottomLeft: CGFloat = 50
+    var bottomRight: CGFloat = 0
     var body: some View {
         
         ZStack {
@@ -38,7 +38,8 @@ struct HomeScreenView: View {
                 VStack() {
                     Image("asparagus")
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: UIScreen.main.bounds.width, height: 300, alignment: .center)
                         .cornerRadius(bottomLeft, corners: .bottomLeft)
                         .edgesIgnoringSafeArea(.all)
                         .shadow(color: Color.black.opacity(0.9), radius: 200)

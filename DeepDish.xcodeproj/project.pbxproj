@@ -11,6 +11,7 @@
 		8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25783127AB099E0092C6C5 /* HomeScreenView.swift */; };
 		8A25783427AB099F0092C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783327AB099F0092C6C5 /* Assets.xcassets */; };
 		8A25783727AB099F0092C6C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783627AB099F0092C6C5 /* Preview Assets.xcassets */; };
+		8AC7195527ADC9F900F154DA /* TestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC7195427ADC9F900F154DA /* TestScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8A25783127AB099E0092C6C5 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		8A25783327AB099F0092C6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A25783627AB099F0092C6C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8AC7195427ADC9F900F154DA /* TestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */,
 				8A25783127AB099E0092C6C5 /* HomeScreenView.swift */,
+				8AC7195427ADC9F900F154DA /* TestScreen.swift */,
 				8A25783327AB099F0092C6C5 /* Assets.xcassets */,
 				8A25783527AB099F0092C6C5 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC7195527ADC9F900F154DA /* TestScreen.swift in Sources */,
 				8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */,
 				8A25783027AB099E0092C6C5 /* DeepDishApp.swift in Sources */,
 			);
