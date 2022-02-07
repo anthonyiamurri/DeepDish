@@ -7,20 +7,30 @@
 
 import SwiftUI
 
-struct TestScreen: View {
-    var topLeft: CGFloat = 0
-    var topRight: CGFloat = 50
-    var bottomLeft: CGFloat = 50
-    var bottomRight: CGFloat = 0
 
+//struct Categories: Identifiable{
+//    let id = UUID()
+//    var Text : String
+//    var Image: String
+//}
+//var firstCategorie: Categories = Categories(Text: "first", Image: "first")
+//var secondCategorie: Categories = Categories(Text: "first", Image: "first")
+//
+//
+//let categoriesArray: [Categories] = [firstCategorie, secondCategorie]
+
+struct TestScreen: View {
+    
     var body: some View {
-        Image("asparagus")
-            .resizable()
-            .scaledToFill()
-            .frame(width: 100, height: 100, alignment: .center)
-//            .clipShape(Rectangle())
-            .cornerRadius(bottomLeft, corners: .bottomLeft)
-    }
+//        VStack {
+//            ForEach(categoriesArray){ index in
+//                Text("\(index.id)")
+//
+//                }
+//            }
+        Text("yes")
+        
+        }
 }
 
 struct TestScreen_Previews: PreviewProvider {

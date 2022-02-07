@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552CA9B827B1A23300364B3E /* BottomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9B727B1A23300364B3E /* BottomSectionView.swift */; };
 		8A25783027AB099E0092C6C5 /* DeepDishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */; };
 		8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25783127AB099E0092C6C5 /* HomeScreenView.swift */; };
 		8A25783427AB099F0092C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783327AB099F0092C6C5 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552CA9B727B1A23300364B3E /* BottomSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSectionView.swift; sourceTree = "<group>"; };
 		8A25782C27AB099E0092C6C5 /* DeepDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDishApp.swift; sourceTree = "<group>"; };
 		8A25783127AB099E0092C6C5 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				8AC7195427ADC9F900F154DA /* TestScreen.swift */,
 				8A25783327AB099F0092C6C5 /* Assets.xcassets */,
 				8A25783527AB099F0092C6C5 /* Preview Content */,
+				552CA9B727B1A23300364B3E /* BottomSectionView.swift */,
 			);
 			path = DeepDish;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				8AC7195527ADC9F900F154DA /* TestScreen.swift in Sources */,
 				8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */,
 				8A25783027AB099E0092C6C5 /* DeepDishApp.swift in Sources */,
+				552CA9B827B1A23300364B3E /* BottomSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
