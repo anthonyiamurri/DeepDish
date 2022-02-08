@@ -19,7 +19,7 @@ struct HomeScreenButtomSectionView: View {
                 .foregroundColor(.white)
             ScrollView{
                 VStack {
-                    ForEach(Rows){ index in
+                    ForEach(Categorie.TestData){ index in
                         HStack{
                             ForEach(index.categories){ index in
                                 Spacer()
