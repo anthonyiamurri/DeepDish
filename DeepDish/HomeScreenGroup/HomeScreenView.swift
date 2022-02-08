@@ -41,12 +41,7 @@ struct HomeScreenView: View {
                 Spacer()
                     .frame(height:100)
                 ZStack{
-                    Rectangle()
-                        .frame(height: 450)
-                        .edgesIgnoringSafeArea(.all)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                        .cornerRadius(topLeft, corners: .topLeft)
-                        .shadow(color: Color.black.opacity(0.9), radius:30, x:0,y:-10)
+                    ButtomSection()
                     HomeScreenButtomSectionView()
                 }
                

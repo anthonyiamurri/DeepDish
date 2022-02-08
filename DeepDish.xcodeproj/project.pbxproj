@@ -10,6 +10,7 @@
 		552CA9BA27B1D6F100364B3E /* CategorieStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9B927B1D6F100364B3E /* CategorieStruct.swift */; };
 		552CA9BC27B216F900364B3E /* HomeScreenButtomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9BB27B216F900364B3E /* HomeScreenButtomSectionView.swift */; };
 		552CA9BE27B2188300364B3E /* HomeScreenTopSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */; };
+		552CA9C127B2DC9E00364B3E /* ButtomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9C027B2DC9E00364B3E /* ButtomSection.swift */; };
 		8A25783027AB099E0092C6C5 /* DeepDishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */; };
 		8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25783127AB099E0092C6C5 /* HomeScreenView.swift */; };
 		8A25783427AB099F0092C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783327AB099F0092C6C5 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		552CA9B927B1D6F100364B3E /* CategorieStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieStruct.swift; sourceTree = "<group>"; };
 		552CA9BB27B216F900364B3E /* HomeScreenButtomSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenButtomSectionView.swift; sourceTree = "<group>"; };
 		552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTopSectionView.swift; sourceTree = "<group>"; };
+		552CA9C027B2DC9E00364B3E /* ButtomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomSection.swift; sourceTree = "<group>"; };
 		8A25782C27AB099E0092C6C5 /* DeepDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDishApp.swift; sourceTree = "<group>"; };
 		8A25783127AB099E0092C6C5 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 				552CA9BB27B216F900364B3E /* HomeScreenButtomSectionView.swift */,
 				552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */,
 				552CA9B927B1D6F100364B3E /* CategorieStruct.swift */,
+				552CA9C027B2DC9E00364B3E /* ButtomSection.swift */,
 			);
 			path = HomeScreenGroup;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552CA9C127B2DC9E00364B3E /* ButtomSection.swift in Sources */,
 				8AC7195527ADC9F900F154DA /* TestScreen.swift in Sources */,
 				552CA9BE27B2188300364B3E /* HomeScreenTopSectionView.swift in Sources */,
 				552CA9BA27B1D6F100364B3E /* CategorieStruct.swift in Sources */,
