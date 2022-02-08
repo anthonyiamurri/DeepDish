@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		552CA9B827B1A23300364B3E /* BottomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9B727B1A23300364B3E /* BottomSectionView.swift */; };
+		552CA9BA27B1D6F100364B3E /* CategorieStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9B927B1D6F100364B3E /* CategorieStruct.swift */; };
+		552CA9BC27B216F900364B3E /* HomeScreenButtomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9BB27B216F900364B3E /* HomeScreenButtomSectionView.swift */; };
+		552CA9BE27B2188300364B3E /* HomeScreenTopSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */; };
 		8A25783027AB099E0092C6C5 /* DeepDishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */; };
 		8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25783127AB099E0092C6C5 /* HomeScreenView.swift */; };
 		8A25783427AB099F0092C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783327AB099F0092C6C5 /* Assets.xcassets */; };
@@ -16,7 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		552CA9B727B1A23300364B3E /* BottomSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSectionView.swift; sourceTree = "<group>"; };
+		552CA9B927B1D6F100364B3E /* CategorieStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieStruct.swift; sourceTree = "<group>"; };
+		552CA9BB27B216F900364B3E /* HomeScreenButtomSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenButtomSectionView.swift; sourceTree = "<group>"; };
+		552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTopSectionView.swift; sourceTree = "<group>"; };
 		8A25782C27AB099E0092C6C5 /* DeepDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDishApp.swift; sourceTree = "<group>"; };
 		8A25783127AB099E0092C6C5 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
@@ -36,6 +40,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552CA9BF27B21A9700364B3E /* HomeScreenGroup */ = {
+			isa = PBXGroup;
+			children = (
+				8A25783127AB099E0092C6C5 /* HomeScreenView.swift */,
+				552CA9BB27B216F900364B3E /* HomeScreenButtomSectionView.swift */,
+				552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */,
+				552CA9B927B1D6F100364B3E /* CategorieStruct.swift */,
+			);
+			path = HomeScreenGroup;
+			sourceTree = "<group>";
+		};
 		8A25782327AB099E0092C6C5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +71,10 @@
 			isa = PBXGroup;
 			children = (
 				8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */,
-				8A25783127AB099E0092C6C5 /* HomeScreenView.swift */,
+				552CA9BF27B21A9700364B3E /* HomeScreenGroup */,
 				8AC7195427ADC9F900F154DA /* TestScreen.swift */,
 				8A25783327AB099F0092C6C5 /* Assets.xcassets */,
 				8A25783527AB099F0092C6C5 /* Preview Content */,
-				552CA9B727B1A23300364B3E /* BottomSectionView.swift */,
 			);
 			path = DeepDish;
 			sourceTree = "<group>";
@@ -144,9 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AC7195527ADC9F900F154DA /* TestScreen.swift in Sources */,
+				552CA9BE27B2188300364B3E /* HomeScreenTopSectionView.swift in Sources */,
+				552CA9BA27B1D6F100364B3E /* CategorieStruct.swift in Sources */,
+				552CA9BC27B216F900364B3E /* HomeScreenButtomSectionView.swift in Sources */,
 				8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */,
 				8A25783027AB099E0092C6C5 /* DeepDishApp.swift in Sources */,
-				552CA9B827B1A23300364B3E /* BottomSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

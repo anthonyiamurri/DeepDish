@@ -22,15 +22,24 @@ import SwiftUI
 struct TestScreen: View {
     
     var body: some View {
-//        VStack {
-//            ForEach(categoriesArray){ index in
-//                Text("\(index.id)")
-//
-//                }
-//            }
-        Text("yes")
         
+        VStack {
+            Rectangle()
+                .frame(height:300)
+                .foregroundColor(.blue)
+            
+            Spacer().frame(height:60)
+            ScrollView{
+                VStack{
+                    ForEach(0..<50){ index in
+                        Rectangle()
+                            .frame(height:300)
+                    }
+                }
+            }
         }
+        
+    }
 }
 
 struct TestScreen_Previews: PreviewProvider {
