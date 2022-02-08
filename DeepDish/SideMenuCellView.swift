@@ -18,7 +18,7 @@ struct SideMenuCellView: View {
                 .font(.system(size: 32))
             
             Text(viewModel.title)
-                .font(.system(size: 30, weight: .semibold))
+                .font(.system(size: 28, weight: .semibold))
             
             Spacer()
         }

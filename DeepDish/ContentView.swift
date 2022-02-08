@@ -21,10 +21,10 @@ struct ContentView: View {
                 }
                 
                 HomeView()
-                    .cornerRadius(isShowing ? 20 : 10)
-                    .offset(x: isShowing ? 300 : 0, y: isShowing ? 44 : 0)
-                    .scaleEffect(isShowing ? 0.8 : 1)
-                    .navigationBarItems(leading: Button(action: {
+                    .cornerRadius(isShowing ? 10 : 10)
+                    .offset(x: isShowing ? 300 : 0, y: isShowing ? 0 : 0)
+                    .scaleEffect(isShowing ? 0.8 : 1.10)
+                    .navigationBarItems(trailing: Button(action: {
                         withAnimation(.spring()) {
                             isShowing.toggle()
                         }
@@ -34,8 +34,8 @@ struct ContentView: View {
                             .font(.system(size: 40))
                     }))
                 //The button is part of the home view (main screen), and this navigation bar item is made as a button to unlock the menu
-                    .navigationTitle("Menu")
-                    .navigationBarTitleDisplayMode(.inline)
+                    /*.navigationTitle("Menu")
+                    .navigationBarTitleDisplayMode(.inline)*/
                     //The navigation bar title display mode (inline) aligns it at the top and shrinks the text size
             }
             
@@ -53,9 +53,16 @@ struct ContentView_Previews: PreviewProvider {
 struct HomeView: View {
     var body: some View {
         ZStack {
-            Color(.white)
+           // Color(.orange)
+      Image("Background")
+                .resizable()
+                .scaledToFit()
+            //Background was only changed to test shadows for the 'Breakfast' text
             
-            Text("(Home Screen)")
+            Text("BREAKFAST")
+                .foregroundColor(Color.white)
+            
+                .shadow(color: .black, radius: 0.2, x: 1.2, y: 1.8)
                 .padding()
         }
     }
