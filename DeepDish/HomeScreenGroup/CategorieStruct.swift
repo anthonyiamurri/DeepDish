@@ -17,7 +17,7 @@ struct Categorie: Identifiable{
     var Image: String
     
     static var firstCategorie: Categorie = Categorie(Text: "first", Image: "pasta")
-    static var secondCategorie: Categorie = Categorie(Text: "first", Image: "pasta")
+    static var secondCategorie: Categorie = Categorie(Text: "second", Image: "pasta")
 
     static let categoriesRow1 = Row(categories: [firstCategorie,secondCategorie])
     static let categoriesRow2 = Row(categories: [firstCategorie,secondCategorie])

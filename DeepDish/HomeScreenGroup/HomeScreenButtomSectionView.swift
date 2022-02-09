@@ -29,6 +29,16 @@ struct HomeScreenButtomSectionView: View {
                                     .frame(width: 150, height: 150)
                                     .clipShape(RoundedRectangle(cornerRadius: 30))
                                     .shadow(color: Color.black.opacity(0.2), radius:1, x:0,y:5)
+                                    .overlay(ZStack {
+                                        Text(index.Text)
+                                            .font(.callout)
+                                            .bold()
+                                            .padding(6)
+                                            .foregroundColor(.white)
+                                    }.background(Color.red)
+                                                .cornerRadius(20.0)
+                                                .padding(6.0)
+                                             , alignment: .bottomTrailing)
                                     
                             }
                             Spacer()

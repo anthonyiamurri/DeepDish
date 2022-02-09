@@ -29,7 +29,7 @@ struct HomeScreenView: View {
                 Spacer()
                     .frame(height:100)
                 ZStack{
-                    ButtomSection()
+                    BottomSection()
                     HomeScreenButtomSectionView()
                 }
                
@@ -42,6 +42,7 @@ struct HomeScreenView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreenView()
+            .environment(\.sizeCategory, .extraLarge)
     }
 }
 

@@ -17,20 +17,19 @@ struct HomeScreenTopSectionView: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: UIScreen.main.bounds.width, height: 300, alignment: .center)
                 .cornerRadius(bottomLeft, corners: .bottomLeft)
-                .edgesIgnoringSafeArea(.all)
-                .shadow(color: Color.black.opacity(0.9), radius:30, x:0,y:10)
-            
-            VStack {
-                Spacer()
-                HStack {
+                .overlay(ZStack {
                     Text("Breakfast")
                         .font(.largeTitle)
                         .bold()
-                        .padding([.leading, .bottom])
-                        .shadow(color: Color.black.opacity(0.2), radius:1, x:0,y:5)
-                    Spacer()
-                }
-            }
+                        .padding(6)
+                        .foregroundColor(.white)
+                }.background(Color.red)
+                            .opacity(0.8)
+                            .cornerRadius(20.0)
+                            .padding(6.0)
+                         , alignment: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
+                .shadow(color: Color.black.opacity(0.9), radius:30, x:0,y:10)
             
         }
     }

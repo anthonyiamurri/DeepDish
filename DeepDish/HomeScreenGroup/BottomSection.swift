@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtomSection: View {
+struct BottomSection: View {
     var topLeft: CGFloat = 50
     var body: some View {
         Rectangle()
@@ -21,6 +21,6 @@ struct ButtomSection: View {
 
 struct ButtomSection_Previews: PreviewProvider {
     static var previews: some View {
-        ButtomSection()
+        BottomSection()
     }
 }

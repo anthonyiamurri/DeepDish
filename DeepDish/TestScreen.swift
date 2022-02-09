@@ -20,26 +20,27 @@ import SwiftUI
 //let categoriesArray: [Categories] = [firstCategorie, secondCategorie]
 
 struct TestScreen: View {
-    
+    var bottomLeft: CGFloat = 50
     var body: some View {
-        
         VStack {
-            Rectangle()
-                .frame(height:300)
-                .foregroundColor(.blue)
-            
-            Spacer().frame(height:60)
-            ScrollView{
-                VStack{
-                    ForEach(0..<50){ index in
-                        Rectangle()
-                            .frame(height:300)
-                    }
-                }
-            }
+            Image("baconEgg")
+                .resizable()
+                .scaledToFit()
+                .cornerRadius(bottomLeft, corners: .bottomLeft)
+                .overlay(ZStack {
+                    Text("Pasta")
+                        .font(.callout)
+                        .padding(6)
+                        .foregroundColor(.white)
+                }.background(Color.black)
+                            .opacity(0.8)
+                            .cornerRadius(10.0)
+                            .padding(6.0)
+                         , alignment: .bottomTrailing)
+            Spacer()
         }
-        
     }
+    
 }
 
 struct TestScreen_Previews: PreviewProvider {
