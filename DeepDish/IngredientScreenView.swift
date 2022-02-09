@@ -13,20 +13,54 @@ struct IngredientScreenView: View {
             Image("backgroundPattern")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
-            VStack{
+            VStack {
                 HomeScreenTopSectionView()
                 Spacer().frame(height:100)
                 BottomSection()
-                    .overlay(ZStack {
+                    .overlay(VStack {
                         Text("Ingredient")
+                            .underline(color: .red)
                             .font(.largeTitle)
                             .bold()
                             .padding(6)
                             .foregroundColor(.black)
+                        HStack {
+                            VStack  {
+                                Label("Lorem Ipsum", systemImage: "person.crop.circle")
+                                    .font(.title)
+                                    .padding()
+                                    .multilineTextAlignment(.leading)
+                                Label("Lorem Ipsum", systemImage: "person.crop.circle")
+                                    .font(.title)
+                                    .padding()
+                                    .multilineTextAlignment(.leading)
+                                Label("Lorem Ipsum is the language of code", systemImage: "person.crop.circle")
+                                    .font(.title)
+                                    .padding()
+                                    .multilineTextAlignment(.leading)
+                                Label("Lorem Ipsum", systemImage: "person.crop.circle")
+                                    .font(.title)
+                                    .padding()
+                                    .multilineTextAlignment(.leading)
+                                
+                                Spacer ()
+                                
+                            }
+                            
+                            Spacer ()
+                                
+                            
+                        }
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         
-                    }, alignment: .top)
+                        
+                        
+                        
+                    })
+                    
             }
         }
+        
     }
 }
 struct IngredientScreenView_Previews: PreviewProvider {
