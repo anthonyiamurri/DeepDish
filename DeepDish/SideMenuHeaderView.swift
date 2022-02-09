@@ -2,7 +2,7 @@
 //  SideMenuHeaderView.swift
 //  Side_Menu
 //
-//  Created by Jasmine Tetusch on 2/3/22.
+//  Created by Jasmine Teutsch on 2/3/22.
 //
 
 import SwiftUI
@@ -20,7 +20,7 @@ struct SideMenuHeaderView: View {
                     isShowing.toggle()
                 }
             }, label: {
-                Image(systemName: "xmark")
+                Image(systemName: "")
                     .frame(width: 32, height: 32)
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(.white)//won't see it because of this
@@ -29,34 +29,15 @@ struct SideMenuHeaderView: View {
             
             
             VStack(alignment: .leading) {
-                /*Image("cat in a bag")
-                    .resizable()
-                    .scaledToFit()
-                    .clipped()
-                    .frame(width: 64, height: 64)
-                    .clipShape(Circle())
-                    .padding(.bottom, 16)*/
                 
                 Text("Menu")
                     .font(.title)
                     .fontWeight(.bold)
                     /*.font(.system(size: 24, weight: .bold))*/
                 
-                /*Text("@pope")
-                    .font(.system(size: 14))
-                    .padding(.bottom, 20)*/
-                
                 HStack(spacing: 12){
-                    HStack(spacing: 4){
-                        /*Text("1")
-                            .bold()
-                        Text("Following")*/
-                    }
-                    HStack(spacing: 4){
-                        /*Text("1.4m")
-                            .bold()
-                        Text("Followers")*/
-                    }
+                    HStack(spacing: 4){}
+                    HStack(spacing: 4){}
                     Spacer()
                 }
                 

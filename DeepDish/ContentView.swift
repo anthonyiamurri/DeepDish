@@ -13,18 +13,48 @@ struct ContentView: View {
     
     var body: some View {
         
-        NavigationView {
+       // NavigationView {
             
             ZStack {
+                
                 if isShowing {
                     SideMenuView(isShowing: $isShowing)
                 }
                 
                 HomeView()
                     .cornerRadius(isShowing ? 10 : 10)
-                    .offset(x: isShowing ? 300 : 0, y: isShowing ? 0 : 0)
-                    .scaleEffect(isShowing ? 0.8 : 1.10)
-                    .navigationBarItems(trailing: Button(action: {
+                    .offset(x: isShowing ? 400 : 0, y: isShowing ? 0 : 0)
+                    .scaleEffect(isShowing ? 0.8 : 1.2)
+                
+                VStack {
+                    Button(action: {
+                          withAnimation(.spring()) {
+                              isShowing.toggle()
+                          }
+                      }, label: {
+                          Image(systemName: "house.circle")
+                              .foregroundColor(.black)
+                              .font(.system(size: 50))
+                      })
+                        .padding(.leading, 300.0)
+                        .onTapGesture(count: 3) {
+                            print("I bet that hurt-")
+                        }
+                        
+                    Spacer()
+                }
+                
+               /* Button(action: {
+                      withAnimation(.spring()) {
+                          isShowing.toggle()
+                      }
+                  }, label: {
+                      Image(systemName: "house.circle")
+                          .foregroundColor(.black)
+                          .font(.system(size: 40))
+                  })*/
+
+                  /* .navigationBarItems(trailing: Button(action: {
                         withAnimation(.spring()) {
                             isShowing.toggle()
                         }
@@ -32,14 +62,14 @@ struct ContentView: View {
                         Image(systemName: "house.circle")
                             .foregroundColor(.black)
                             .font(.system(size: 40))
-                    }))
+                    })//)*/
                 //The button is part of the home view (main screen), and this navigation bar item is made as a button to unlock the menu
                     /*.navigationTitle("Menu")
                     .navigationBarTitleDisplayMode(.inline)*/
                     //The navigation bar title display mode (inline) aligns it at the top and shrinks the text size
             }
             
-        }
+        //}
         
     }
 }
@@ -47,6 +77,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+.previewInterfaceOrientation(.portrait)
     }
 }
 
@@ -56,14 +87,33 @@ struct HomeView: View {
            // Color(.orange)
       Image("Background")
                 .resizable()
-                .scaledToFit()
+            
+                //.scaledToFit()
+                .edgesIgnoringSafeArea(.all)
             //Background was only changed to test shadows for the 'Breakfast' text
             
-            Text("BREAKFAST")
-                .foregroundColor(Color.white)
-            
+           /* VStack {
+                Text("BREAKFAST")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.green)
+                    .shadow(color: .black, radius: 0.2, x: 1.2, y: 1.8)
+                
+                
+            }*/
+            Text("Hello, World!")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(Color.blue)
                 .shadow(color: .black, radius: 0.2, x: 1.2, y: 1.8)
-                .padding()
+                .onTapGesture(count: 3) {
+                    print("I bet that hurt-")
+                }
+            
         }
+        
+        
+        
+        
     }
 }
