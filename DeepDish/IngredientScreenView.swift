@@ -15,7 +15,7 @@ struct IngredientScreenView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 HomeScreenTopSectionView()
-                Spacer().frame(height:100)
+                Spacer().frame(height:50)
                 BottomSection()
                     .overlay(ZStack {
                         Text("Ingredient")

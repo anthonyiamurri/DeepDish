@@ -9,20 +9,22 @@ import SwiftUI
 
 struct HomeScreenTopSectionView: View {
     var bottomLeft: CGFloat = 50
+    
     var body: some View {
         ZStack {
-            Image("baconAndEgg")
-
+            Image("bacon and Egg")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: UIScreen.main.bounds.width, height: 300, alignment: .center)
                 .cornerRadius(bottomLeft, corners: .bottomLeft)
+                .accessibilityHidden(true)
                 .overlay(ZStack {
                     Text("Breakfast")
                         .font(.largeTitle)
                         .bold()
                         .padding(6)
                         .foregroundColor(.white)
+                        .accessibilityHint("Meal of the day is breakfast")
                 }.background(Color.red)
                             .opacity(0.8)
                             .cornerRadius(20.0)
@@ -33,6 +35,7 @@ struct HomeScreenTopSectionView: View {
             
         }
     }
+
 }
 
 struct HomeScreenTopSection_Previews: PreviewProvider {

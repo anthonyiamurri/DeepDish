@@ -22,25 +22,11 @@ import SwiftUI
 struct TestScreen: View {
     var bottomLeft: CGFloat = 50
     var body: some View {
-        VStack {
-            Image("baconEgg")
-                .resizable()
-                .scaledToFit()
-                .cornerRadius(bottomLeft, corners: .bottomLeft)
-                .overlay(ZStack {
-                    Text("Pasta")
-                        .font(.callout)
-                        .padding(6)
-                        .foregroundColor(.white)
-                }.background(Color.black)
-                            .opacity(0.8)
-                            .cornerRadius(10.0)
-                            .padding(6.0)
-                         , alignment: .bottomTrailing)
-            Spacer()
+        VStack{
+            NavigationLink("6",destination: IngredientScreenView())
+            
         }
     }
-    
 }
 
 struct TestScreen_Previews: PreviewProvider {
