@@ -25,24 +25,19 @@ struct IngredientScreenView: View {
                             .padding(6)
                             .foregroundColor(.black)
                         HStack {
-                            VStack  {
+                            VStack(alignment: .leading)  {
                                 Label("Lorem Ipsum", systemImage: "person.crop.circle")
                                     .font(.title)
                                     .padding()
-                                    .multilineTextAlignment(.leading)
                                 Label("Lorem Ipsum", systemImage: "person.crop.circle")
                                     .font(.title)
                                     .padding()
-                                    .multilineTextAlignment(.leading)
                                 Label("Lorem Ipsum is the language of code", systemImage: "person.crop.circle")
                                     .font(.title)
                                     .padding()
-                                    .multilineTextAlignment(.leading)
                                 Label("Lorem Ipsum", systemImage: "person.crop.circle")
                                     .font(.title)
                                     .padding()
-                                    .multilineTextAlignment(.leading)
-                                
                                 Spacer ()
                                 
                             }
@@ -51,11 +46,6 @@ struct IngredientScreenView: View {
                                 
                             
                         }
-                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                        
-                        
-                        
-                        
                     })
                     
             }
