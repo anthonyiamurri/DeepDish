@@ -11,7 +11,7 @@ struct BottomSection: View {
     var topLeft: CGFloat = 50
     var body: some View {
         Rectangle()
-            .frame(height: 450)
+            .frame(height: 500)
             .edgesIgnoringSafeArea(.all)
             .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
             .cornerRadius(topLeft, corners: .topLeft)

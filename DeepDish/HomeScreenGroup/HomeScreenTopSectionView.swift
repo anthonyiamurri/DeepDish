@@ -15,7 +15,7 @@ struct HomeScreenTopSectionView: View {
             Image("bacon and Egg")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: UIScreen.main.bounds.width, height: 300, alignment: .center)
+                .frame(width: UIScreen.main.bounds.width, height: 350, alignment: .center)
                 .cornerRadius(bottomLeft, corners: .bottomLeft)
                 .accessibilityHidden(true)
                 .overlay(ZStack {

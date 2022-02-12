@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct IngredientScreenView: View {
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     var body: some View {
         ZStack {
             Image("backgroundPattern")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
+                .accessibilityHidden(true)
             VStack{
                 HomeScreenTopSectionView()
                 Spacer().frame(height:50)
@@ -26,6 +28,18 @@ struct IngredientScreenView: View {
                         
                     }, alignment: .top)
             }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: Button(action : {
+                self.mode.wrappedValue.dismiss()
+            }){
+                Text("\(Image(systemName: "chevron.backward")) Back")
+                    .padding(6)
+                    .foregroundColor(.white)
+                    .background(Color.red)
+                            .cornerRadius(20.0)
+                            .padding(6.0)
+                
+            })
         }
     }
 }

@@ -7,26 +7,25 @@
 
 import Foundation
 
-struct Row: Identifiable{
-    let id = UUID()
-    var categories: [Category]
-}
+//struct Row: Identifiable{
+//    let id = UUID()
+//    var categories: [Category]
+//}
 struct Category: Identifiable{
     let id = UUID()
-    var Text : String
-    var Image: String
+        var Text : String
+        var Image: String
+        
+        //class variables (defined at the entire structure)
+        //singleton (static variables)
+        static var firstCategorie: Category = Category(Text: "tacos", Image: "pasta")
+        static var secondCategorie: Category = Category(Text: "tacos", Image: "pasta")
+        static var thirdCategorie: Category = Category(Text: "tacos", Image: "pasta")
+        static var fourthCategorie: Category = Category(Text: "tacos", Image: "pasta")
+        static var fifthCategorie: Category = Category(Text: "tacos", Image: "pasta")
+        static var sixthCategorie: Category = Category(Text: "tacos", Image: "pasta")
     
-    static var firstCategory: Category = Category(Text: "pizza", Image: "pasta")
-    static var secondCategory: Category = Category(Text: "tacos", Image: "pasta")
-
-    static let categoryRow1 = Row(categories: [firstCategory,secondCategory])
-    static let categoryRow2 = Row(categories: [firstCategory,secondCategory])
-    static let categoryRow3 = Row(categories: [firstCategory,secondCategory])
-    static let categoryRow4 = Row(categories: [firstCategory,secondCategory])
-    static let categoryRow5 = Row(categories: [firstCategory,secondCategory])
-    static let categoryRow6 = Row(categories: [firstCategory,secondCategory])
-
-    static let TestData: [Row] = [categoryRow1,categoryRow2,categoryRow3,categoryRow4,categoryRow5,categoryRow6]
+        
+        static let TestData: [Category] = [firstCategorie,secondCategorie,thirdCategorie,fourthCategorie,fifthCategorie,sixthCategorie]
 }
-
 
