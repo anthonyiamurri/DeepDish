@@ -26,7 +26,6 @@ struct HomeScreenTopSectionView: View {
                         .foregroundColor(.white)
                         .accessibilityHint("Meal of the day is breakfast")
                 }.background(Color.red)
-                            .opacity(0.8)
                             .cornerRadius(20.0)
                             .padding(6.0)
                          , alignment: .bottomTrailing)

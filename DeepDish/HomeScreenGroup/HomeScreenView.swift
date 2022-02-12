@@ -24,10 +24,10 @@ struct HomeScreenView: View {
                     .edgesIgnoringSafeArea(.all)
                     .accessibilityHidden(true)
                 
-                VStack() {
+                VStack(spacing: 60) {
                     HomeScreenTopSectionView()
-                    Spacer()
-                        .frame(height:50)
+                    //Spacer()
+                       // .frame(height:50)
                     ZStack{
                         BottomSection()
                         HomeScreenButtomSectionView()

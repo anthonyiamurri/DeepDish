@@ -23,7 +23,7 @@ struct TestScreen: View {
     var bottomLeft: CGFloat = 50
     var body: some View {
         VStack{
-            NavigationLink("6",destination: IngredientScreenView())
+            Text("yes")
             
         }
     }

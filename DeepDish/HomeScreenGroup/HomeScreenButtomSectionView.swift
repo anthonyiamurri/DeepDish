@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeScreenButtomSectionView: View {
     var topLeft: CGFloat = 50
     
+    var meal: String = ""
     var body: some View {
         
         VStack {
@@ -18,15 +19,15 @@ struct HomeScreenButtomSectionView: View {
                 .frame(width: 5, height: 5)
                 .foregroundColor(.white)
                 .accessibilityLabel("Meal category list")
-            ScrollView{
+            ScrollView(.vertical, showsIndicators: false, content: {
                 let gridItems: [GridItem] = Array(repeating: .init(.adaptive(minimum: 200)), count: 2)
                 LazyVGrid(columns: gridItems) {
                     ForEach(Category.TestData) { category in
                         NavigationLink {
                             //where does it go
-                            IngredientScreenView()
-                                
-
+                            IngredientScreenView(meal: category.Text, Category: category)
+                            
+                            
                         } label: {
                             Image(category.Image)
                                 .resizable()
@@ -36,7 +37,7 @@ struct HomeScreenButtomSectionView: View {
                                 .shadow(color: Color.black.opacity(0.2), radius:1, x:0,y:5)
                                 .overlay(ZStack {
                                     Text(category.Text)
-                                        .font(.callout)
+                                        .font(.title2)
                                         .bold()
                                         .padding(6)
                                         .foregroundColor(.white)
@@ -45,13 +46,13 @@ struct HomeScreenButtomSectionView: View {
                                             .padding(6.0)
                                          , alignment: .bottomTrailing)
                         }
-                                                .accessibilityLabel("\(category.Text) category")
+                        .accessibilityLabel("\(category.Text) category")
                         .accessibilityHint("Double Tap to select meal category")
                         
                     }
                     Spacer()
                 }
-            }
+            })
         }
     }
     
