@@ -21,6 +21,7 @@ struct SideMenuHeaderView: View {
                 }
             }, label: {
                 Image(systemName: "")
+                    .accessibilityHidden(true)
                     .frame(width: 32, height: 32)
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(.white)//won't see it because of this
@@ -31,8 +32,9 @@ struct SideMenuHeaderView: View {
             VStack(alignment: .leading) {
                 
                 Text("Menu")
-                    .font(.title)
                     .fontWeight(.bold)
+                    .accessibilityHidden(true)
+                    .font(.title)
                     /*.font(.system(size: 24, weight: .bold))*/
                 
                 HStack(spacing: 12){

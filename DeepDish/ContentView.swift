@@ -37,9 +37,8 @@ struct ContentView: View {
                               .font(.system(size: 50))
                       })
                         .padding(.leading, 300.0)
-                        .onTapGesture(count: 3) {
-                            print("I bet that hurt-")
-                        }
+                        .accessibilityAddTraits(.isButton)
+                        .accessibilityHint("Tap to access Menu or Return")
                         
                     Spacer()
                 }
@@ -87,6 +86,7 @@ struct HomeView: View {
            // Color(.orange)
       Image("Background")
                 .resizable()
+                .accessibilityHidden(true)
             
                 //.scaledToFit()
                 .edgesIgnoringSafeArea(.all)

@@ -14,6 +14,7 @@ struct SideMenuCellView: View {
     var body: some View {
         HStack(spacing: 16){
             Image(systemName: viewModel.imageName)
+                .accessibilityHidden(true)
                 .frame(width: 24, height: 24)
                 //.font(.system(size: 32))
                 .font(.title)
@@ -22,6 +23,8 @@ struct SideMenuCellView: View {
                // .font(.system(size: 28, weight: .semibold))
                 .font(.title)
                 .fontWeight(.semibold)
+                .accessibilityAddTraits(.isButton)
+                .accessibilityHint("Tap to alter controls")
             
             Spacer()
         }
