@@ -21,34 +21,11 @@ struct IngredientScreenView: View {
                 .edgesIgnoringSafeArea(.all)
                 .accessibilityHidden(true)
             VStack(spacing: 60){
-                HomeScreenTopSectionView()
-                BottomSection()
-                    .overlay(VStack {
-                        Text("Ingredient")
-                            .underline(color: .red)
-                            .font(.largeTitle)
-                            .bold()
-                            .padding(6)
-                            .foregroundColor(.black)
-                        HStack {
-                            ScrollView(.vertical, showsIndicators: false, content: {
-                                
-                                VStack(alignment: .leading)  {
-                                    ForEach(Category.Meal.ingredient, id: \.self){ingredient in
-                                        Label(ingredient, systemImage: "person.crop.circle")
-                                            .font(.title)
-                                            .padding()
-                                    }
-                                    Spacer ()
-                                    
-                                }
-                            })
-                            
-                            Spacer ()
-                            
-                            
-                        }
-                    })
+                HomeScreenTopSectionView(TopMealImage: Category.Image, Meal: Category.Text)
+                ZStack {
+                    BottomSection()
+                        .overlay(ingredientList)
+                }
             }
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: Button(action : {
@@ -71,6 +48,37 @@ struct IngredientScreenView: View {
                         }
                         
                     }))
+        }
+    }
+    
+    
+    var ingredientList: some View{
+        VStack(spacing:20) {
+            Text("Ingredient")
+                .underline(color: .red)
+                .font(.largeTitle)
+                .bold()
+                .padding(6)
+                .foregroundColor(.black)
+            HStack {
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    
+                    VStack(alignment: .leading)  {
+                        ForEach(Category.Meal.ingredient, id: \.self){ingredient in
+                            Label(ingredient, systemImage: "person.crop.circle")
+                                .font(.title)
+                                .padding()
+                                .foregroundColor(.black)
+                        }
+                        Spacer ()
+                        
+                    }
+                })
+                
+                Spacer ()
+                
+                
+            }
         }
     }
 }

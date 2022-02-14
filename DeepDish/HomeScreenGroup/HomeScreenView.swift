@@ -24,8 +24,8 @@ struct HomeScreenView: View {
                     .edgesIgnoringSafeArea(.all)
                     .accessibilityHidden(true)
                 
-                VStack(spacing: 60) {
-                    HomeScreenTopSectionView()
+                VStack() {
+                    HomeScreenTopSectionView(TopMealImage: "baconEgg", Meal: "Breakfast")
                     //Spacer()
                        // .frame(height:50)
                     ZStack{

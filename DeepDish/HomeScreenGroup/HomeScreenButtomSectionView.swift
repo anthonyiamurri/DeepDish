@@ -21,7 +21,7 @@ struct HomeScreenButtomSectionView: View {
                 .accessibilityLabel("Meal category list")
             ScrollView(.vertical, showsIndicators: false, content: {
                 let gridItems: [GridItem] = Array(repeating: .init(.adaptive(minimum: 200)), count: 2)
-                LazyVGrid(columns: gridItems) {
+                LazyVGrid(columns: gridItems, spacing: 40) {
                     ForEach(Category.TestData) { category in
                         NavigationLink {
                             //where does it go
@@ -29,6 +29,7 @@ struct HomeScreenButtomSectionView: View {
                             
                             
                         } label: {
+                            
                             Image(category.Image)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
@@ -44,7 +45,7 @@ struct HomeScreenButtomSectionView: View {
                                 }.background(Color.red)
                                             .cornerRadius(20.0)
                                             .padding(6.0)
-                                         , alignment: .bottomTrailing)
+                                         , alignment: .bottomLeading)
                         }
                         .accessibilityLabel("\(category.Text) category")
                         .accessibilityHint("Double Tap to select meal category")

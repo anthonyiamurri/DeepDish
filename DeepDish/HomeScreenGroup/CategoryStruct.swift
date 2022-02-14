@@ -26,12 +26,12 @@ struct Category: Identifiable{
     var Meal: Meal
 
 
-    static var firstCategorie: Category = Category(Text: "tacos", Image: "pasta", Meal: tacos)
-    static var secondCategorie: Category = Category(Text: "pizza", Image: "pasta", Meal: pizza)
-    static var thirdCategorie: Category = Category(Text: "tacos", Image: "pasta", Meal: tacos)
-    static var fourthCategorie: Category = Category(Text: "pizza", Image: "pasta", Meal: pizza)
-    static var fifthCategorie: Category = Category(Text: "tacos", Image: "pasta", Meal: tacos)
-    static var sixthCategorie: Category = Category(Text: "pizza", Image: "pasta",Meal: pizza)
+    static var firstCategorie: Category = Category(Text: "Tacos", Image: "pasta", Meal: tacos)
+    static var secondCategorie: Category = Category(Text: "Pizza", Image: "pizza", Meal: pizza)
+    static var thirdCategorie: Category = Category(Text: "Tacos", Image: "pasta", Meal: tacos)
+    static var fourthCategorie: Category = Category(Text: "Pizza", Image: "pizza", Meal: pizza)
+    static var fifthCategorie: Category = Category(Text: "Tacos", Image: "pasta", Meal: tacos)
+    static var sixthCategorie: Category = Category(Text: "Pizza", Image: "pizza",Meal: pizza)
 
     static let TestData: [Category] = [firstCategorie,secondCategorie,thirdCategorie,fourthCategorie,fifthCategorie,sixthCategorie]
 }

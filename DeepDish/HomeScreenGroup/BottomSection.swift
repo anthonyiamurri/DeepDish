@@ -15,7 +15,8 @@ struct BottomSection: View {
             .edgesIgnoringSafeArea(.all)
             .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
             .cornerRadius(topLeft, corners: .topLeft)
-            .shadow(color: Color.black.opacity(0.9), radius:30, x:0,y:-10)
+            //.shadow(color: Color.black.opacity(0.4), radius:30, x:0,y:-5)
+            .shadow(color: Color.black.opacity(0.6), radius:8, x:0,y:-5)
     }
 }
 
