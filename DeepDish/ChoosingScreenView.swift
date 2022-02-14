@@ -60,7 +60,7 @@ struct ChoosingScreen: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 30))
                                 .shadow(color: Color.black.opacity(0.2), radius:1, x:0,y:5)
                                 .overlay(ZStack {
-                                    Text("Recipie")
+                                    Text("Recipe")
                                         .font(.title2)
                                         .bold()
                                         .padding(6)
