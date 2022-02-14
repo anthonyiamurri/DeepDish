@@ -25,7 +25,7 @@ struct HomeScreenButtomSectionView: View {
                     ForEach(Category.TestData) { category in
                         NavigationLink {
                             //where does it go
-                            IngredientScreenView(meal: category.Text, Category: category)
+                            ChoosingScreen(meal: category.Text, Category: category)
                             
                             
                         } label: {
