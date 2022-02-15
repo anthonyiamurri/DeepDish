@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		3EB201FB27B2EF07006E3455 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB201FA27B2EF07006E3455 /* RoundedCorner.swift */; };
 		3EB201FD27B2EF3C006E3455 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB201FC27B2EF3C006E3455 /* View+cornerRadius.swift */; };
-		552CA9BA27B1D6F100364B3E /* CategorieStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9B927B1D6F100364B3E /* CategorieStruct.swift */; };
+		552CA9BA27B1D6F100364B3E /* CategoryStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9B927B1D6F100364B3E /* CategoryStruct.swift */; };
 		552CA9BC27B216F900364B3E /* HomeScreenButtomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9BB27B216F900364B3E /* HomeScreenButtomSectionView.swift */; };
 		552CA9BE27B2188300364B3E /* HomeScreenTopSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */; };
 		552CA9C127B2DC9E00364B3E /* BottomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9C027B2DC9E00364B3E /* BottomSection.swift */; };
 		552CA9C527B3114000364B3E /* IngredientScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9C427B3114000364B3E /* IngredientScreenView.swift */; };
-		552CA9C727B31B1600364B3E /* IngredientData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9C627B31B1600364B3E /* IngredientData.swift */; };
+		55A1B2DE27B7A34B003811F0 /* CategorieStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B2DD27B7A34B003811F0 /* CategorieStruct.swift */; };
+		55A1B2E027B8D374003811F0 /* ChoosingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B2DF27B8D374003811F0 /* ChoosingScreenView.swift */; };
+		55F231F027BB55A900AB3769 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F231EF27BB55A900AB3769 /* SpeechRecognizer.swift */; };
 		8A25783027AB099E0092C6C5 /* DeepDishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */; };
 		8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25783127AB099E0092C6C5 /* HomeScreenView.swift */; };
 		8A25783427AB099F0092C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783327AB099F0092C6C5 /* Assets.xcassets */; };
@@ -25,12 +27,14 @@
 /* Begin PBXFileReference section */
 		3EB201FA27B2EF07006E3455 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		3EB201FC27B2EF3C006E3455 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
-		552CA9B927B1D6F100364B3E /* CategorieStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieStruct.swift; sourceTree = "<group>"; };
+		552CA9B927B1D6F100364B3E /* CategoryStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStruct.swift; sourceTree = "<group>"; };
 		552CA9BB27B216F900364B3E /* HomeScreenButtomSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenButtomSectionView.swift; sourceTree = "<group>"; };
 		552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTopSectionView.swift; sourceTree = "<group>"; };
 		552CA9C027B2DC9E00364B3E /* BottomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSection.swift; sourceTree = "<group>"; };
 		552CA9C427B3114000364B3E /* IngredientScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientScreenView.swift; sourceTree = "<group>"; };
-		552CA9C627B31B1600364B3E /* IngredientData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientData.swift; sourceTree = "<group>"; };
+		55A1B2DD27B7A34B003811F0 /* CategorieStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieStruct.swift; sourceTree = "<group>"; };
+		55A1B2DF27B8D374003811F0 /* ChoosingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosingScreenView.swift; sourceTree = "<group>"; };
+		55F231EF27BB55A900AB3769 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		8A25782C27AB099E0092C6C5 /* DeepDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDishApp.swift; sourceTree = "<group>"; };
 		8A25783127AB099E0092C6C5 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
@@ -58,10 +62,19 @@
 				3EB201FA27B2EF07006E3455 /* RoundedCorner.swift */,
 				552CA9BB27B216F900364B3E /* HomeScreenButtomSectionView.swift */,
 				552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */,
-				552CA9B927B1D6F100364B3E /* CategorieStruct.swift */,
+				552CA9B927B1D6F100364B3E /* CategoryStruct.swift */,
 				552CA9C027B2DC9E00364B3E /* BottomSection.swift */,
+				55A1B2DD27B7A34B003811F0 /* CategorieStruct.swift */,
 			);
 			path = HomeScreenGroup;
+			sourceTree = "<group>";
+		};
+		55F231EE27BB556000AB3769 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55F231EF27BB55A900AB3769 /* SpeechRecognizer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8A25782327AB099E0092C6C5 = {
@@ -83,8 +96,9 @@
 		8A25782E27AB099E0092C6C5 /* DeepDish */ = {
 			isa = PBXGroup;
 			children = (
+				55F231EE27BB556000AB3769 /* Models */,
+				55A1B2DF27B8D374003811F0 /* ChoosingScreenView.swift */,
 				552CA9C427B3114000364B3E /* IngredientScreenView.swift */,
-				552CA9C627B31B1600364B3E /* IngredientData.swift */,
 				8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */,
 				552CA9BF27B21A9700364B3E /* HomeScreenGroup */,
 				8AC7195427ADC9F900F154DA /* TestScreen.swift */,
@@ -173,14 +187,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB201FB27B2EF07006E3455 /* RoundedCorner.swift in Sources */,
+				55A1B2E027B8D374003811F0 /* ChoosingScreenView.swift in Sources */,
 				3EB201FD27B2EF3C006E3455 /* View+cornerRadius.swift in Sources */,
 				552CA9C127B2DC9E00364B3E /* BottomSection.swift in Sources */,
 				552CA9C527B3114000364B3E /* IngredientScreenView.swift in Sources */,
+				55A1B2DE27B7A34B003811F0 /* CategorieStruct.swift in Sources */,
 				8AC7195527ADC9F900F154DA /* TestScreen.swift in Sources */,
 				552CA9BE27B2188300364B3E /* HomeScreenTopSectionView.swift in Sources */,
-				552CA9BA27B1D6F100364B3E /* CategorieStruct.swift in Sources */,
+				552CA9BA27B1D6F100364B3E /* CategoryStruct.swift in Sources */,
 				552CA9BC27B216F900364B3E /* HomeScreenButtomSectionView.swift in Sources */,
-				552CA9C727B31B1600364B3E /* IngredientData.swift in Sources */,
+				55F231F027BB55A900AB3769 /* SpeechRecognizer.swift in Sources */,
 				8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */,
 				8A25783027AB099E0092C6C5 /* DeepDishApp.swift in Sources */,
 			);
@@ -310,12 +326,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepDish/Preview Content\"";
 				DEVELOPMENT_TEAM = 379CG6R86P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,12 +358,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepDish/Preview Content\"";
 				DEVELOPMENT_TEAM = 379CG6R86P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct DeepDishApp: App {
+    @State private var currentScreen = AppScreens.homePage
     var body: some Scene {
         WindowGroup {
-            HomeScreenView()
+            if currentScreen == .homePage{
+                HomeScreenView()
+            }
         }
+        
     }
+}
+
+
+enum AppScreens {
+    case homePage
+    case ingredientPage
 }
