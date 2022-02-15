@@ -65,10 +65,16 @@ struct IngredientScreenView: View {
                     
                     VStack(alignment: .leading)  {
                         ForEach(Category.Meal.ingredient, id: \.self){ingredient in
-                            Label(ingredient, systemImage: "person.crop.circle")
-                                .font(.title)
-                                .padding()
-                                .foregroundColor(.black)
+                            Label{
+                                Text("\(ingredient)")
+                            } icon:{
+                                Image("appIcon")
+                                    .resizable()
+                                    .frame(width: 50.0, height: 50.0)
+                            }
+                            .font(.title)
+                            .padding()
+                            .foregroundColor(.black)
                         }
                         Spacer ()
                         

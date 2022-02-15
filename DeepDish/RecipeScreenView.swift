@@ -64,10 +64,16 @@ struct RecipeScreenView: View {
                     
                     VStack(alignment: .leading)  {
                         ForEach(Category.Meal.recipie, id: \.self){recipie in
-                            Label(recipie, systemImage: "person.crop.circle")
-                                .font(.title)
-                                .padding()
-                                .foregroundColor(.black)
+                            Label{
+                                Text("\(recipie)")
+                            } icon:{
+                                Image("appIcon")
+                                    .resizable()
+                                    .frame(width: 50.0, height: 50.0)
+                            }
+                            .font(.title)
+                            .padding()
+                            .foregroundColor(.black)
                         }
                         Spacer ()
                         
