@@ -11,7 +11,7 @@ struct IngredientScreenView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @GestureState private var dragOffset = CGSize.zero
     
-    @State var meal: String
+   //@State var meal: String
     @State var Category: Category
     
     var body: some View {
@@ -87,6 +87,6 @@ struct IngredientScreenView: View {
 
 struct IngredientScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        IngredientScreenView(meal: "tacos", Category: Category(Text: "tacos", Image: "pasta", Meal: tacos))
+        IngredientScreenView( Category: Category(Text: "tacos", Image: "pasta", Meal: tacos))
     }
 }

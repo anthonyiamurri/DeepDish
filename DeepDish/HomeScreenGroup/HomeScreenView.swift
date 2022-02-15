@@ -17,8 +17,6 @@ struct HomeScreenView: View {
         
         NavigationView {
             ZStack {
-                Text("HomeScreen")
-                    .accessibilityHint("You are in the home screen")
                 Image("backgroundPattern")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)

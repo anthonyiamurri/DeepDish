@@ -21,6 +21,8 @@ struct ChoosingScreen: View {
                 .accessibilityHidden(true)
             VStack(spacing: 60) {
                 HomeScreenTopSectionView(TopMealImage: Category.Image ,Meal: Category.Text)
+                    .accessibilityHidden(true)
+
                 //Spacer()
                 // .frame(height:50)
                 ZStack{
@@ -28,7 +30,7 @@ struct ChoosingScreen: View {
                     HStack {
                         NavigationLink {
                             //where does it go
-                            IngredientScreenView(meal: Category.Text, Category: Category)
+                            IngredientScreenView(Category: Category)
                             
                         } label: {
                             
@@ -36,14 +38,17 @@ struct ChoosingScreen: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 150, height: 150)
-                                .clipShape(RoundedRectangle(cornerRadius: 30))
+                                 .clipShape(RoundedRectangle(cornerRadius: 30))
                                 .shadow(color: Color.black.opacity(0.2), radius:1, x:0,y:5)
+                                .accessibilityHidden(true)
                                 .overlay(ZStack {
                                     Text("Ingredient")
                                         .font(.title2)
                                         .bold()
                                         .padding(6)
                                         .foregroundColor(.white)
+                                        .accessibilityLabel("Ingredients for \(Category.Text)")
+                                        .accessibilityHint("Double tap to get tacos ingredient")
                                 }.background(Color.red)
                                             .cornerRadius(20.0)
                                             .padding(6.0)
@@ -59,12 +64,14 @@ struct ChoosingScreen: View {
                                 .frame(width: 150, height: 150)
                                 .clipShape(RoundedRectangle(cornerRadius: 30))
                                 .shadow(color: Color.black.opacity(0.2), radius:1, x:0,y:5)
+                                .accessibilityHidden(true)
                                 .overlay(ZStack {
                                     Text("Recipe")
                                         .font(.title2)
                                         .bold()
                                         .padding(6)
                                         .foregroundColor(.white)
+                                        .accessibilityLabel("Recipe for \(Category.Text)")
                                 }.background(Color.red)
                                             .cornerRadius(20.0)
                                             .padding(6.0)

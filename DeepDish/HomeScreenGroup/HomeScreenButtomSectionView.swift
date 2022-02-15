@@ -36,6 +36,7 @@ struct HomeScreenButtomSectionView: View {
                                 .frame(width: 150, height: 150)
                                 .clipShape(RoundedRectangle(cornerRadius: 30))
                                 .shadow(color: Color.black.opacity(0.2), radius:1, x:0,y:5)
+                                .accessibilityHidden(true)
                                 .overlay(ZStack {
                                     Text(category.Text)
                                         .font(.title2)
@@ -48,7 +49,7 @@ struct HomeScreenButtomSectionView: View {
                                          , alignment: .bottomLeading)
                         }
                         .accessibilityLabel("\(category.Text) category")
-                        .accessibilityHint("Double Tap to select meal category")
+                        .accessibilityHint("Double Tap to select \(category.Text) from meal category")
                         
                     }
                     Spacer()
