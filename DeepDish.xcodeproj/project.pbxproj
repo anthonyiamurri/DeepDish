@@ -14,7 +14,6 @@
 		552CA9BE27B2188300364B3E /* HomeScreenTopSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */; };
 		552CA9C127B2DC9E00364B3E /* BottomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9C027B2DC9E00364B3E /* BottomSection.swift */; };
 		552CA9C527B3114000364B3E /* IngredientScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552CA9C427B3114000364B3E /* IngredientScreenView.swift */; };
-		55A1B2DE27B7A34B003811F0 /* CategorieStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B2DD27B7A34B003811F0 /* CategorieStruct.swift */; };
 		55A1B2E027B8D374003811F0 /* ChoosingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B2DF27B8D374003811F0 /* ChoosingScreenView.swift */; };
 		55F231F027BB55A900AB3769 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F231EF27BB55A900AB3769 /* SpeechRecognizer.swift */; };
 		8A25783027AB099E0092C6C5 /* DeepDishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */; };
@@ -22,6 +21,7 @@
 		8A25783427AB099F0092C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783327AB099F0092C6C5 /* Assets.xcassets */; };
 		8A25783727AB099F0092C6C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783627AB099F0092C6C5 /* Preview Assets.xcassets */; };
 		8AC7195527ADC9F900F154DA /* TestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC7195427ADC9F900F154DA /* TestScreen.swift */; };
+		8AD71C3327BC3CEE00E8F8B4 /* RecipeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71C3227BC3CEE00E8F8B4 /* RecipeScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,6 @@
 		552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTopSectionView.swift; sourceTree = "<group>"; };
 		552CA9C027B2DC9E00364B3E /* BottomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSection.swift; sourceTree = "<group>"; };
 		552CA9C427B3114000364B3E /* IngredientScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientScreenView.swift; sourceTree = "<group>"; };
-		55A1B2DD27B7A34B003811F0 /* CategorieStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieStruct.swift; sourceTree = "<group>"; };
 		55A1B2DF27B8D374003811F0 /* ChoosingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosingScreenView.swift; sourceTree = "<group>"; };
 		55F231EF27BB55A900AB3769 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		8A25782C27AB099E0092C6C5 /* DeepDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +40,7 @@
 		8A25783327AB099F0092C6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A25783627AB099F0092C6C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8AC7195427ADC9F900F154DA /* TestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreen.swift; sourceTree = "<group>"; };
+		8AD71C3227BC3CEE00E8F8B4 /* RecipeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,6 @@
 				552CA9BD27B2188300364B3E /* HomeScreenTopSectionView.swift */,
 				552CA9B927B1D6F100364B3E /* CategoryStruct.swift */,
 				552CA9C027B2DC9E00364B3E /* BottomSection.swift */,
-				55A1B2DD27B7A34B003811F0 /* CategorieStruct.swift */,
 			);
 			path = HomeScreenGroup;
 			sourceTree = "<group>";
@@ -99,6 +98,7 @@
 				55F231EE27BB556000AB3769 /* Models */,
 				55A1B2DF27B8D374003811F0 /* ChoosingScreenView.swift */,
 				552CA9C427B3114000364B3E /* IngredientScreenView.swift */,
+				8AD71C3227BC3CEE00E8F8B4 /* RecipeScreenView.swift */,
 				8A25782F27AB099E0092C6C5 /* DeepDishApp.swift */,
 				552CA9BF27B21A9700364B3E /* HomeScreenGroup */,
 				8AC7195427ADC9F900F154DA /* TestScreen.swift */,
@@ -190,8 +190,8 @@
 				55A1B2E027B8D374003811F0 /* ChoosingScreenView.swift in Sources */,
 				3EB201FD27B2EF3C006E3455 /* View+cornerRadius.swift in Sources */,
 				552CA9C127B2DC9E00364B3E /* BottomSection.swift in Sources */,
+				8AD71C3327BC3CEE00E8F8B4 /* RecipeScreenView.swift in Sources */,
 				552CA9C527B3114000364B3E /* IngredientScreenView.swift in Sources */,
-				55A1B2DE27B7A34B003811F0 /* CategorieStruct.swift in Sources */,
 				8AC7195527ADC9F900F154DA /* TestScreen.swift in Sources */,
 				552CA9BE27B2188300364B3E /* HomeScreenTopSectionView.swift in Sources */,
 				552CA9BA27B1D6F100364B3E /* CategoryStruct.swift in Sources */,

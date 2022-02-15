@@ -14,7 +14,7 @@ struct Meal{
     
 
 }
-var tacos: Meal = Meal(ingredient: ["Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit"], recipie: ["Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit"])
+var tacos: Meal = Meal(ingredient: ["Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit"], recipie: ["Put a pan on medium heat","Add some cooking oil","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit"])
 var pizza: Meal = Meal(ingredient: ["Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit"], recipie: ["Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit"])
 
 

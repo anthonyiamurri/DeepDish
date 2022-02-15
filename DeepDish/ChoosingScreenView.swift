@@ -56,6 +56,7 @@ struct ChoosingScreen: View {
                         }
                         NavigationLink {
                             //where does it go
+                            RecipeScreenView(Category: Category)
                             
                         } label: {
                             Image(Category.Image)
