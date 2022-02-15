@@ -87,20 +87,10 @@ struct HomeView: View {
       Image("Background")
                 .resizable()
                 .accessibilityHidden(true)
-            
-                //.scaledToFit()
                 .edgesIgnoringSafeArea(.all)
             //Background was only changed to test shadows for the 'Breakfast' text
             
-           /* VStack {
-                Text("BREAKFAST")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                    .foregroundColor(Color.green)
-                    .shadow(color: .black, radius: 0.2, x: 1.2, y: 1.8)
-                
-                
-            }*/
+
             Text("Hello, World!")
                 .font(.largeTitle)
                 .fontWeight(.bold)
