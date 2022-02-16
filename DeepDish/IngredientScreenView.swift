@@ -13,7 +13,6 @@ struct IngredientScreenView: View {
     
    //@State var meal: String
     @State var Category: Category
-    
     var body: some View {
         ZStack {
             Image("backgroundPattern")
@@ -65,16 +64,18 @@ struct IngredientScreenView: View {
                     
                     VStack(alignment: .leading)  {
                         ForEach(Category.Meal.ingredient, id: \.self){ingredient in
+                            
                             Label{
                                 Text("\(ingredient)")
                             } icon:{
-                                Image("appIcon")
-                                    .resizable()
-                                    .frame(width: 50.0, height: 50.0)
+//                                Image("appIcon")
+//                                    .resizable()
+//                                    .frame(width: 50.0, height: 50.0)
                             }
                             .font(.title)
                             .padding()
                             .foregroundColor(.black)
+                            
                         }
                         Spacer ()
                         

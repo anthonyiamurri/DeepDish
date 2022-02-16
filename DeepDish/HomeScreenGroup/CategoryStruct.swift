@@ -14,8 +14,8 @@ struct Meal{
     
 
 }
-var tacos: Meal = Meal(ingredient: ["Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit","Tacos ipsum dolor sit"], recipie: ["Put a pan on medium heat","Add some cooking oil","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit"])
-var pizza: Meal = Meal(ingredient: ["Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit","Pizza ipsum dolor sit"], recipie: ["Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit","Lorem ipsum dolor sit"])
+var tacos: Meal = Meal(ingredient: ["Tacos1","Tacos 2","Tacos3t","Tacos4","Tacos5","Tacos6","Tacos 7"], recipie: ["Put a pan on medium heat","Add some cooking oil","Lorem2","Lorem 3","Lorem 4","Lorem 5t","Lorem6"])
+var pizza: Meal = Meal(ingredient: ["Pizza1","Pizza 1","Pizza2","Pizza3","Pizza4","Pizza5"], recipie: ["Lorem1","Lorem2","Lorem3","Lorem 4","Lorem5","Lorem 6","Lorem7"])
 
 
 /* This holds all tge category data*/
