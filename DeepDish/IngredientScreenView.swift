@@ -68,9 +68,9 @@ struct IngredientScreenView: View {
                             Label{
                                 Text("\(ingredient)")
                             } icon:{
-//                                Image("appIcon")
-//                                    .resizable()
-//                                    .frame(width: 50.0, height: 50.0)
+                                Image("appIcon")
+                                    .resizable()
+                                    .frame(width: 50.0, height: 50.0)
                             }
                             .font(.title)
                             .padding()
