@@ -74,6 +74,13 @@ struct HomeScreenView: View {
                 }
                 .tag(2)
 
+                }
+            }
+        }.onAppear{ // this keeps the app on portrait mode
+            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+            AppDelegeate.orientationLock = .portrait
+        }.onDisappear{
+            AppDelegeate.orientationLock = .all
         }
     }
 }
