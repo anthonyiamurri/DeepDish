@@ -9,19 +9,20 @@ import SwiftUI
 
 @main
 struct DeepDishApp: App {
-    @State private var currentScreen = AppScreens.homePage
+    @UIApplicationDelegateAdaptor(AppDelegeate.self) var appDelegeate // this keeps the app on portrait mode
     var body: some Scene {
         WindowGroup {
-            if currentScreen == .homePage{
                 HomeScreenView()
-            }
         }
         
     }
 }
 
-
-enum AppScreens {
-    case homePage
-    case ingredientPage
+// this keeps the app on portrait mode
+class AppDelegeate: NSObject, UIApplicationDelegate{
+    static var orientationLock = UIInterfaceOrientationMask.all
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask{
+        return AppDelegeate.orientationLock
+    }
 }
