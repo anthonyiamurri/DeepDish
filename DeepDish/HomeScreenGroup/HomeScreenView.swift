@@ -44,6 +44,13 @@ struct HomeScreenView: View {
                     }
                 }
             }
+            .onAppear{ // this keeps the app on portrait mode
+                UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+                AppDelegeate.orientationLock = .portrait
+            }.onDisappear{
+                AppDelegeate.orientationLock = .all
+            }
+            
             .tabItem {
                 Label("Home", systemImage: "house")
             }
@@ -76,14 +83,8 @@ struct HomeScreenView: View {
 
                 }
             }
-        }.onAppear{ // this keeps the app on portrait mode
-            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
-            AppDelegeate.orientationLock = .portrait
-        }.onDisappear{
-            AppDelegeate.orientationLock = .all
         }
-    }
-}
+
 
 
 struct ContentView_Previews: PreviewProvider {
