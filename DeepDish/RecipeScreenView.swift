@@ -58,7 +58,7 @@ struct RecipeScreenView: View {
                 .font(.largeTitle)
                 .bold()
                 .padding(6)
-                .foregroundColor(.black)
+                .foregroundColor(Color("darktext"))
             HStack {
                 ScrollView(.vertical, showsIndicators: false, content: {
                     
@@ -73,7 +73,7 @@ struct RecipeScreenView: View {
                             }
                             .font(.title)
                             .padding()
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("darktext"))
                         }
                         Spacer ()
                         

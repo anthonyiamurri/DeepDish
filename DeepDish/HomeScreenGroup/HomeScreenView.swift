@@ -17,8 +17,13 @@ struct HomeScreenView: View {
     //For Rabview
     
     init() {
-        UITabBar.appearance().isTranslucent = true //changing to true stopped gray bar at bottom
+       /* UITabBar.appearance().isTranslucent = false //changing to true stopped gray bar at bottom
         UITabBar.appearance().unselectedItemTintColor = UIColor.red
+        UITabBar.appearance().barTintColor = UIColor.green*/
+        let apparence = UITabBarAppearance()
+                UITabBar.appearance().unselectedItemTintColor = UIColor.red
+                apparence.configureWithOpaqueBackground()
+                if #available(iOS 15.0, *) {UITabBar.appearance().scrollEdgeAppearance = apparence}
      }
     
     var body: some View {
@@ -29,13 +34,14 @@ struct HomeScreenView: View {
                 ZStack {
                     Image("backgroundPattern")
                         .resizable()
-                        .edgesIgnoringSafeArea(.all)
+                        .edgesIgnoringSafeArea(.horizontal)
+                        .edgesIgnoringSafeArea(.top)
                         .accessibilityHidden(true)
                     
                     VStack() {
-                        HomeScreenTopSectionView(TopMealImage: "baconEgg", Meal: "Breakfast")
-                        //Spacer()
-                           // .frame(height:50)
+                        HomeScreenTopSectionView(TopMealImage: "bacon and Egg", Meal: "Breakfast")
+//                        Spacer()
+                            .frame(height: 270)
                         ZStack{
                             BottomSection()
                             HomeScreenButtomSectionView()
@@ -63,7 +69,8 @@ struct HomeScreenView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
             }
-            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.horizontal)
+            .edgesIgnoringSafeArea(.top)
                 .tabItem {
                     Label("Favorites", systemImage: "bookmark")
                 }
@@ -75,13 +82,15 @@ struct HomeScreenView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
             }
-            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.horizontal)
+            .edgesIgnoringSafeArea(.top)
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
                 .tag(2)
 
                 }
+                .accentColor(.red)
             }
         }
 

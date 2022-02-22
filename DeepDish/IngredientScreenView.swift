@@ -58,7 +58,7 @@ struct IngredientScreenView: View {
                 .font(.largeTitle)
                 .bold()
                 .padding(6)
-                .foregroundColor(.black)
+                .foregroundColor(Color("darktext"))
             HStack {
                 ScrollView(.vertical, showsIndicators: false, content: {
                     
@@ -74,7 +74,7 @@ struct IngredientScreenView: View {
                             }
                             .font(.title)
                             .padding()
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("darktext"))
                             
                         }
                         Spacer ()

@@ -17,7 +17,7 @@ struct HomeScreenButtomSectionView: View {
             Spacer().frame(height:35)
             Rectangle()
                 .frame(width: 5, height: 5)
-                .foregroundColor(.white)
+                .foregroundColor(Color("Background"))
                 .accessibilityLabel("Meal category list")
             ScrollView(.vertical, showsIndicators: false, content: {
                 let gridItems: [GridItem] = Array(repeating: .init(.adaptive(minimum: 200)), count: 2)
@@ -52,7 +52,7 @@ struct HomeScreenButtomSectionView: View {
                         .accessibilityHint("Double Tap to select \(category.Text) from meal category")
                         
                     }
-                    Spacer()
+                //    Spacer()
                 }
             })
         }
