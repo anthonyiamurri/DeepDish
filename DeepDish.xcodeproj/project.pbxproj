@@ -27,6 +27,7 @@
 		8A25783227AB099E0092C6C5 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25783127AB099E0092C6C5 /* HomeScreenView.swift */; };
 		8A25783427AB099F0092C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783327AB099F0092C6C5 /* Assets.xcassets */; };
 		8A25783727AB099F0092C6C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25783627AB099F0092C6C5 /* Preview Assets.xcassets */; };
+		8A714AAE27C6B9E900361C8E /* BeAware_ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8A714AAD27C6B9E900361C8E /* BeAware_ding.wav */; };
 		8AC7195527ADC9F900F154DA /* TestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC7195427ADC9F900F154DA /* TestScreen.swift */; };
 		8AD71C3327BC3CEE00E8F8B4 /* RecipeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD71C3227BC3CEE00E8F8B4 /* RecipeScreenView.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		8A25783127AB099E0092C6C5 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		8A25783327AB099F0092C6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A25783627AB099F0092C6C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A714AAD27C6B9E900361C8E /* BeAware_ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BeAware_ding.wav; sourceTree = "<group>"; };
 		8AC7195427ADC9F900F154DA /* TestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreen.swift; sourceTree = "<group>"; };
 		8AD71C3227BC3CEE00E8F8B4 /* RecipeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +131,7 @@
 		8A25782E27AB099E0092C6C5 /* DeepDish */ = {
 			isa = PBXGroup;
 			children = (
+				8A714AAD27C6B9E900361C8E /* BeAware_ding.wav */,
 				55619F4C27C5B338008FAEF3 /* VoiceRecognition */,
 				555776EB27BD8828000A6427 /* SideMenu */,
 				55F231EE27BB556000AB3769 /* Models */,
@@ -211,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A714AAE27C6B9E900361C8E /* BeAware_ding.wav in Resources */,
 				55619F5427C5B384008FAEF3 /* BeAware_ding.wav in Resources */,
 				8A25783727AB099F0092C6C5 /* Preview Assets.xcassets in Resources */,
 				8A25783427AB099F0092C6C5 /* Assets.xcassets in Resources */,
@@ -374,7 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepDish/Preview Content\"";
-				DEVELOPMENT_TEAM = 8KG8PL9HFA;
+				DEVELOPMENT_TEAM = 379CG6R86P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription";
@@ -407,7 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepDish/Preview Content\"";
-				DEVELOPMENT_TEAM = 8KG8PL9HFA;
+				DEVELOPMENT_TEAM = 379CG6R86P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription";

@@ -53,7 +53,7 @@ struct IngredientScreenView: View {
     
     var ingredientList: some View{
         VStack(spacing:20) {
-            Text("Ingredient")
+            Text("Ingredients")
                 .underline(color: .red)
                 .font(.largeTitle)
                 .bold()
