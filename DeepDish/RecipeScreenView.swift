@@ -64,8 +64,11 @@ struct RecipeScreenView: View {
                     
                     VStack(alignment: .leading)  {
                         ForEach(Category.Meal.recipie, id: \.self){recipie in
+                            let index = Category.Meal.recipie.index(of: recipie)! + 1
+                            
                             Label{
-                                Text("\(recipie)")
+                                Text("\(index). \(recipie)")
+                                    .accessibilityLabel("Step \(index), \(recipie)")
                             } icon:{
                                 Image("appIcon")
                                     .resizable()
