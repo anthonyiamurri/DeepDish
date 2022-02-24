@@ -47,6 +47,8 @@ struct ChoosingScreen: View {
                                         .bold()
                                         .padding(6)
                                         .foregroundColor(.white)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(1)
                                         .accessibilityLabel("Ingredients for \(Category.Text)")
                                         .accessibilityHint("Double tap to get \(Category.Text) ingredients")
                                 }.background(Color.red)
@@ -111,5 +113,6 @@ struct ChoosingScreen: View {
 struct ChoosingScreen_Previews: PreviewProvider {
     static var previews: some View {
         ChoosingScreen(meal: "Test", Category: Category(Text: "tacos", Image: "pasta", Meal: tacos))
+            .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
     }
 }
